@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+            class A {
+                read() {
+                    this.x = 100;
+                    this.y = 200;
+                }
+            }
+            class B extends A {
+                sum() {
+                    this.s = this.x + this.y;
+                }
+            }
+            class C extends A {
+                Multi() {
+                    this.s = this.x * this.y;
+                }
+            }
+            class D {
+                Display(s) {
+                    document.write(s + "<br>");
+                }
+            }
+
+            let obj = new B();
+            obj.read();
+            obj.sum();
+            
+            let obj2 = new D();
+            obj2.Display(obj.s);
+
+            let obj1 = new C();
+            obj1.read();
+            obj1.Multi();
+            obj2.Display(obj1.s);
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Displaying array elements -->
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script type="text/javascript">
+        // Defining an array of fruits
+        const fruits = ["Apple", "Orange", "Mango"];
+
+        // Displaying array elements as a string
+        // toString() method returns a string representing the specified array and its elements.
+        document.getElementById("demo").innerHTML = fruits.toString();
+
+        // Displaying array elements with newline separator
+        // join() method joins all elements of an array into a string, separated by commas or a specified separator string.
+        document.getElementById("demo1").innerHTML=fruits.join("\n");
+
+        // Displaying array elements with '*' separator
+        document.getElementById("demo2").innerHTML=fruits.join("*");
+
+        // Defining an array of animals
+        const animals = ["Cat", "Dog", "Cow"];
+
+        // Removing last element from the array
+        // pop() method removes the last element of an array and returns that element.
+        animals.pop(); 
+
+        // Adding 'Tiger' as last element to the array
+        // push() method adds new items to the end of an array and returns the new length.
+        animals.push("Tiger"); 
+
+        // Displaying the updated animals array
+        document.getElementById("demo2").innerHTML=animals;
+
+        // Defining an array of prime numbers
+        let prime_numbers=[2,3,5,7,9,11];
+
+        // Removing the 5th element (9) from the array and replacing it with 13
+        // splice() method changes the contents of an array by removing or replacing existing elements.
+        // It returns the removed item(s).
+        let removeElement=prime_numbers.splice(4,1,13);
+
+        // Removing the 3rd to 5th elements (5, 7, 9) from the array and replacing them with 13, 33, and 43
+        // splice() method changes the contents of an array by removing or replacing existing elements.
+        // The first parameter is the index at which to start changing the array (1 in this case).
+        // The second parameter is the number of elements to remove (3 in this case).
+        // The remaining parameters are the elements to add to the array (13, 33, 43 in this case).
+        // It returns the removed item(s).
+        let removeElement1=prime_numbers.splice(1,3,13,33,43);
+
+        // Removing the 3rd to 5th elements from the array
+        // splice() method changes the contents of an array by removing or replacing existing elements.
+        // The first parameter is the index at which to start changing the array (2 in this case).
+        // The second parameter is the number of elements to remove (3 in this case).
+        // It returns the removed item(s).
+        let removeElement2=prime_numbers.splice(2,3);
+
+        // Removing the 3rd element and all subsequent elements from the array
+        // splice() method changes the contents of an array by removing or replacing existing elements.
+        // The first parameter is the index at which to start changing the array (2 in this case).
+        // The second parameter is the number of elements to remove (all subsequent elements in this case).
+        // It returns the removed item(s).
+        let removeElement3=prime_numbers.splice(2);
+
+        // Displaying the removed element
+        document.write(removeElement);
+        document.write("<br>");
+        document.write(removeElement1);
+
+        document.write("<br>");
+        document.write(removeElement2);
+
+        document.write("<br>");
+        document.write(removeElement3);
+
+        // Displaying the updated prime_numbers array
+        document.write("<br>");
+        document.write(prime_numbers);
+
+
+
+        let num = [2, 3, 5, 7, 11, 13, 17]; // Initializing an array of numbers
+        // Creating a new array from the existing array 'num' starting from index 3 (included) to index 6 (excluded)
+        let newArray = num.slice(3, 6); 
+
+        // Writing the new array to the HTML document
+       document.write("<br>");
+       document.write(newArray);
+
+         let languages = ["JavaScript", "Python", "Java", "C++", "C#"]; // Initializing an array of languages
+        // The original array remains unchanged.
+        // Creating a new array from the existing array 'languages' starting from index 0 (included) to index -1 (excluded)
+        let new_Ar=languages.slice(0,-1);
+
+        document.write("<br>");
+        document.write(new_Ar);
+
+    </script>
+
+
+
+    </script>
+</body>
+</html>

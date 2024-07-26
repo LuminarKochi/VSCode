@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        let number=[1,2,3,4,5,6,7,8,9,10];
+        function checkEven(number)
+        {
+            if(number%2==0)
+            return true;
+        else
+        return false;
+        }
+        let even_numbers=number.filter(checkEven);
+        document.getElementById("demo").innerHTML=even_numbers;
+        document.write(even_numbers);
+    </script>
+</body>
+</html>

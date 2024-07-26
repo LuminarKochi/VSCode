@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+            class A{
+                constructor(){
+                    document.write("constructor")
+                }
+                check(){
+                    document.write("Non abstract method");
+                }
+                display()
+                {}
+            }
+            class B extends A{
+                display(){
+                    document.write("Abstract method");
+                }
+            }
+            obj=new B();
+            obj.check();
+            obj.display();
+            </script>
+    </div>
+</body>
+</html>

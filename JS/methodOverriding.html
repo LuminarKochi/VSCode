@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+            class A{
+                display(){
+                    document.write("class A");
+                }
+            }
+            class B extends A{
+                display(){
+                    document.write("class B");
+                }
+            }
+            let b = new B();
+            b.display();
+            </script>
+    </div>
+</body>
+</html>

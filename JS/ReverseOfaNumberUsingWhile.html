@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function check(){
+            var x=parseInt(document.getElementById("T1").value);
+            var rem,rev=0;
+           // debugger;
+            while(x>0){
+                rem=x%10;
+                rev=rev*10+rem;
+                x=Math.floor(x/10);
+            }
+            document.getElementById("T2").value=rev;
+            alert(rev);
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="T1" placeholder="Enter a number">
+<button onclick="check()">Reverse</button>
+<input type="text" id="T2" placeholder="Reverse of the number">
+    
+</body>
+</html>

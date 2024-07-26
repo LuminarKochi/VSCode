@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            var Adhi=class{
+                constructor(name,age){
+                    this.name=name;
+                    this.age=age;
+                }
+                display(){
+                    document.getElementById("demo").innerHTML += "Name: " + this.name + ", Age: " + this.age + "<br>";
+                }
+            }
+            var e1=new Adhi("Adhithya",26);
+            e1.display();
+            </script>
+    </div>
+</body>
+</html>

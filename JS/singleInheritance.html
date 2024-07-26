@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+            class A{
+                read(){
+                    this.x=100;
+                    this.y=200;
+                }
+            }
+            class B extends A{
+                sum(){
+                    this.s=this.x+this.y;
+                    document.write(this.s)
+                }
+            }
+            obj=new B();
+            obj.read();
+            obj.sum();
+        </script>
+    </div>
+</body>
+</html>

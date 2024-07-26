@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script type="text/javascript">
+        var flowers = ["Rose", "Lily", "Jasmine"];
+        var numbers = [20, 5, 12, 6, 2];
+
+        // Bubble sort algorithm
+        for (var i = 0; i < numbers.length; i++) {
+            for (var j = i+1; j < numbers.length; j++) {
+                if (numbers[i] > numbers[j]) {
+                    var temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = temp;
+                }
+            }
+        }
+
+        document.getElementById("demo").innerHTML = flowers;
+        document.getElementById("demo1").innerHTML = numbers;
+    </script>
+</body>
+</html>
